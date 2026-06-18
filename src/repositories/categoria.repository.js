@@ -1,4 +1,4 @@
-import conn from "../config/db.js";
+import conn from "../config/Database.js";
 
 const categoriaModel = {
     cadastrar: async (dados) => {
