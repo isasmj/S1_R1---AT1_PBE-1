@@ -2,7 +2,7 @@ import express from 'express';
 import categoriaRoutes from './routes/categoria.routes.js';
 import produtoRoutes from './routes/produto.routes.js';
 import 'dotenv/config';
-import { initializeDatabase } from './configs/Database.js';
+import { initializeDatabase } from './config/Database.js'; 
 
 
 const app = express();
