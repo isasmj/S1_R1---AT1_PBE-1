@@ -72,15 +72,16 @@ export async function initializeDatabase() {
 
         await tempConnection.query(`
             create table if not exists produtos (
-            idProduto CHAR(36) DEFAULT(uuid())  PRIMARY KEY,
-            idCategoria INT NOT NULL ,
+            idProduto CHAR(36) DEFAULT(uuid()) PRIMARY KEY,
+            idCategoria INT NOT NULL,
             nomeProduto VARCHAR(100) NOT NULL,
             valorProduto DECIMAL (10,2) NOT NULL,
             vinculoImagem VARCHAR(255) NOT NULL,
             dataCad TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            FOREIGN KEY (idCategoria) references categoria (idCategoria));
+            FOREIGN KEY (idCategoria) references categoria (idCategoria)
             );
         `);
+
 
 
         await tempConnection.end();
