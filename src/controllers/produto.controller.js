@@ -1,4 +1,4 @@
-import produtoModel from "../model/produtos.model.js";
+import produtoModel from "../repositories/produtosrepository";
 
 const produtoController = {
 
