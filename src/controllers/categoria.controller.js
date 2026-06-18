@@ -1,4 +1,4 @@
-import categoriaModel from "../repositories/categoria.repository";
+import categoriaModel from "../repositories/categoria.repository.js";
 
 const categoriaController = {
 
