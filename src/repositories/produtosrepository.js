@@ -1,4 +1,4 @@
-import conn from "../config/Database.js";
+import { conn } from "../config/Database.js";
 
 const produtoModel = {
 
