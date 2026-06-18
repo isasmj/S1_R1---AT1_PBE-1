@@ -9,6 +9,7 @@ const app = express();
 app.use(express.json());
 
 
+app.use('/uploads', express.static('uploads')); 
 app.use(produtoRoutes);
 app.use(categoriaRoutes);
 app.use(express.urlencoded({ extended: true }));
